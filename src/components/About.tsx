@@ -92,7 +92,7 @@ const About: React.FC = () => {
             </div>
 
             {/* Stats Grid */}
-            <div ref={aboutRef} className="grid grid-cols-2 gap-6 mt-12">
+            {/* <div ref={aboutRef} className="grid grid-cols-2 gap-6 mt-12">
               {stats.map((stat, index) => (
                 <div
                   key={index}
@@ -106,7 +106,7 @@ const About: React.FC = () => {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Tech Stack Visual */}

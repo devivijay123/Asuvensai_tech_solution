@@ -107,10 +107,10 @@ const Hero: React.FC = () => {
               
               {/* Floating Elements */}
               <div className="absolute inset-0">
-                <div className="absolute top-16 left-16 w-16 h-16 bg-gradient-to-r from-purple-500 to-blue-500 rounded-2xl animate-float" style={{ animationDelay: '0s' }}></div>
-                <div className="absolute top-24 right-16 w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-xl animate-float" style={{ animationDelay: '2s' }}></div>
-                <div className="absolute bottom-16 left-20 w-20 h-20 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-3xl animate-float" style={{ animationDelay: '4s' }}></div>
-                <div className="absolute bottom-24 right-24 w-8 h-8 bg-gradient-to-r from-purple-400 to-pink-400 rounded-lg animate-float" style={{ animationDelay: '1s' }}></div>
+                <div className="absolute top-16 left-16 w-16 h-16 bg-gradient-to-r from-purple-500 to-blue-500 rounded-2xl animate-float flex flex-col justify-center items-center text-white text-base" style={{ animationDelay: '0s' }}><span>chat</span><span>Bot</span></div>
+                <div className="absolute top-24 right-16 w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-xl animate-float flex flex-col justify-center items-center text-white text-base" style={{ animationDelay: '2s' }}><span>AI</span><span>Agents</span></div>
+                <div className="absolute bottom-16 left-20 w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-3xl animate-float flex flex-col justify-center items-center text-white text-base" style={{ animationDelay: '4s' }}><span>Voice</span><span>AI</span></div>
+                <div className="absolute bottom-16 right-16 w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-400 rounded-2xl animate-float flex flex-col justify-center items-center text-white text-base" style={{ animationDelay: '1s' }}><span>Smart</span><span>Search</span></div>
               </div>
 
               {/* Central AI Symbol */}

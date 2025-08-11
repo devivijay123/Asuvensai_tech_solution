@@ -27,10 +27,10 @@ const Footer: React.FC = () => {
   ];
 
   const socialLinks = [
-    { icon: Linkedin, href: '#', color: 'hover:text-blue-600' },
-    { icon: Twitter, href: '#', color: 'hover:text-blue-400' },
-    { icon: Github, href: '#', color: 'hover:text-gray-600' },
-    { icon: Instagram, href: '#', color: 'hover:text-pink-600' }
+    { icon: Linkedin, color: 'hover:text-blue-600' },
+    { icon: Twitter,  color: 'hover:text-blue-400' },
+    { icon: Github, color: 'hover:text-gray-600' },
+    { icon: Instagram,  color: 'hover:text-pink-600' }
   ];
 
   return (
@@ -40,9 +40,11 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center">
-                <Brain size={20} />
-              </div>
+               <img
+    src="/logo.png"
+    alt="AsuVens AI Logo"
+    className="w-10 h-10 rounded-full"
+  />
               <span className="text-2xl font-bold text-transparent bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text">
                 AsuVens AI
               </span>
@@ -58,7 +60,7 @@ const Footer: React.FC = () => {
                 return (
                   <a
                     key={index}
-                    href={social.href}
+            
                     className={`w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 ${social.color} hover:scale-110 transition-all duration-300`}
                   >
                     <IconComponent size={20} />
@@ -103,9 +105,9 @@ const Footer: React.FC = () => {
                   </button>
                 </li>
               ))}
-              <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors duration-200">Careers</a></li>
+              {/* <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors duration-200">Careers</a></li>
               <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors duration-200">Blog</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors duration-200">Privacy Policy</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors duration-200">Privacy Policy</a></li> */}
             </ul>
           </div>
 
@@ -121,11 +123,16 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center space-x-3 text-gray-400">
                 <Phone size={16} />
-                <span>+91 (XXX) XXX-XXXX</span>
+                <span>+91 9492756026</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-400">
                 <MapPin size={16} />
-                <span>Hyderabad, Telangana, India</span>
+                <div className='flex flex-col'>
+                <span>Sri Sai Nilayam,</span>
+                <span> New Vivekananda Nagar,</span>
+                <span>Allapur, Hyderabad, </span>
+                <span> Telangana, India</span>
+                </div>
               </div>
             </div>
           </div>
@@ -134,7 +141,7 @@ const Footer: React.FC = () => {
         {/* Footer Bottom */}
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-gray-500">
-            &copy; {currentYear} AsuVens AI. All rights reserved. | Designed with ❤️ for Innovation
+            &copy; {currentYear} AsuVens AI. All rights reserved.
           </p>
         </div>
       </div>
